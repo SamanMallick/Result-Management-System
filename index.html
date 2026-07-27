@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Result Management System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page-container">
+    
+    <!-- TOP HEADER -->
+    <header class="top-header">
+      <div class="header-left">
+        <div class="logo-mark">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+        </div>
+        <div class="brand-info">
+          <h1 class="brand-title">Result Management System</h1>
+          <span class="brand-sub">Academic Operations & Portal</span>
+        </div>
+      </div>
+
+      <div class="header-right">
+        <div class="user-greeting">
+          <span class="greeting-label">Logged in as:</span>
+          <span class="user-name">Zakariya</span>
+        </div>
+        <button class="btn-logout">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+            <polyline points="16 17 21 12 16 7"/>
+            <line x1="21" y1="12" x2="9" y2="12"/>
+          </svg>
+          Logout
+        </button>
+      </div>
+    </header>
+
+    <!-- MAIN DASHBOARD CONTENT -->
+    <main class="main-content">
+      <div class="section-title-bar">
+        <h2>Academic & Result Management Modules</h2>
+        <p>Access examination schedules, download official transcripts, request certificates, and manage academic records for Zakariya.</p>
+      </div>
+
+      <!-- BROAD ACTION CARDS GRID -->
+      <div class="dashboard-grid">
+        
+        <!-- Card 1 -->
+        <a href="#" class="grid-card">
+          <div class="card-header">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <span class="badge badge-active">Updated</span>
+          </div>
+          <h3 class="card-title">Student Profile Data</h3>
+          <p class="card-desc">View and manage personal information, academic enrollment details, program history, and contact records.</p>
+          <div class="card-footer">
+            <span class="action-text">View Profile</span>
+            <span class="card-arrow">&rarr;</span>
+          </div>
+        </a>
+
+        <!-- Card 2 -->
+        <a href="#" class="grid-card">
+          <div class="card-header">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+              </svg>
+            </div>
+            <span class="badge badge-open">Open for Registartion</span>
+          </div>
+          <h3 class="card-title">Examination Form</h3>
+          <p class="card-desc">Fill and submit examination forms for upcoming term-end assessments and practical evaluation sessions.</p>
+          <div class="card-footer">
+            <span class="action-text">Fill Form</span>
+            <span class="card-arrow">&rarr;</span>
+          </div>
+        </a>
+
+        <!-- Card 3 -->
+        <a href="#" class="grid-card">
+          <div class="card-header">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="6" width="20" height="12" rx="2"/>
+                <circle cx="12" cy="12" r="2"/>
+                <path d="M6 12h.01M18 12h.01"/>
+              </svg>
+            </div>
+            <span class="badge badge-ready">Available</span>
+          </div>
+          <h3 class="card-title">Admit Card Download</h3>
+          <p class="card-desc">Download hall tickets and admit cards specifying exam centers, dates, time slots, and instructions.</p>
+          <div class="card-footer">
+            <span class="action-text">Download Pass</span>
+            <span class="card-arrow">&rarr;</span>
+          </div>
+        </a>
+
+        <!-- Card 4 -->
+        <a href="#" class="grid-card">
+          <div class="card-header">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 3h5v5"/>
+                <path d="M8 21H3v-5"/>
+                <path d="M21 3 14 10"/>
+                <path d="M3 21l7-7"/>
+              </svg>
+            </div>
+            <span class="badge badge-neutral">Services</span>
+          </div>
+          <h3 class="card-title">Apply For Certificates</h3>
+          <p class="card-desc">Request official transcripts, degree certificates, re-evaluation, and duplicate marksheets online.</p>
+          <div class="card-footer">
+            <span class="action-text">New Request</span>
+            <span class="card-arrow">&rarr;</span>
+          </div>
+        </a>
+
+        <!-- Card 5 -->
+        <a href="#" class="grid-card">
+          <div class="card-header">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="6"/>
+                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
+              </svg>
+            </div>
+            <span class="badge badge-ready">Ready</span>
+          </div>
+          <h3 class="card-title">Provisional Certificate</h3>
+          <p class="card-desc">Access digital provisional passing certificates verified with institutional cryptographic signatures.</p>
+          <div class="card-footer">
+            <span class="action-text">View Certificate</span>
+            <span class="card-arrow">&rarr;</span>
+          </div>
+        </a>
+
+        <!-- Card 6 -->
+        <a href="#" class="grid-card">
+          <div class="card-header">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="6"/>
+                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
+              </svg>
+            </div>
+            <span class="badge badge-neutral">Academic</span>
+          </div>
+          <h3 class="card-title">Character Certificate</h3>
+          <p class="card-desc">Generate official conduct and character certificates issued by the office of the Registrar.</p>
+          <div class="card-footer">
+            <span class="action-text">Request Copy</span>
+            <span class="card-arrow">&rarr;</span>
+          </div>
+        </a>
+
+        <!-- Card 7 -->
+        <a href="#" class="grid-card">
+          <div class="card-header">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="6"/>
+                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
+              </svg>
+            </div>
+            <span class="badge badge-neutral">Transfer</span>
+          </div>
+          <h3 class="card-title">Migration Certificate</h3>
+          <p class="card-desc">Submit requests for university migration and transfer certificates for higher education credentials.</p>
+          <div class="card-footer">
+            <span class="action-text">Apply Migration</span>
+            <span class="card-arrow">&rarr;</span>
+          </div>
+        </a>
+
+        <!-- Card 8 -->
+        <a href="#" class="grid-card">
+          <div class="card-header">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="5" width="20" height="14" rx="2"/>
+                <line x1="2" y1="10" x2="22" y2="10"/>
+              </svg>
+            </div>
+            <span class="badge badge-active">Fee Portal</span>
+          </div>
+          <h3 class="card-title">Payment & Receipts</h3>
+          <p class="card-desc">Pay examination fees, transcript charges, and download previous transaction receipts.</p>
+          <div class="card-footer">
+            <span class="action-text">Make Payment</span>
+            <span class="card-arrow">&rarr;</span>
+          </div>
+        </a>
+
+        <!-- Card 9 -->
+        <a href="#" class="grid-card">
+          <div class="card-header">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="8" y1="6" x2="21" y2="6"/>
+                <line x1="8" y1="12" x2="21" y2="12"/>
+                <line x1="8" y1="18" x2="21" y2="18"/>
+                <line x1="3" y1="6" x2="3.01" y2="6"/>
+                <line x1="3" y1="12" x2="3.01" y2="12"/>
+                <line x1="3" y1="18" x2="3.01" y2="18"/>
+              </svg>
+            </div>
+            <span class="badge badge-ready">Published</span>
+          </div>
+          <h3 class="card-title">Grade Card & Results</h3>
+          <p class="card-desc">Check semester-wise SGPA, CGPA calculations, detailed marks breakdown, and pass/fail status.</p>
+          <div class="card-footer">
+            <span class="action-text">View Results</span>
+            <span class="card-arrow">&rarr;</span>
+          </div>
+        </a>
+
+        <!-- Card 10 -->
+        <a href="#" class="grid-card">
+          <div class="card-header">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                <line x1="12" y1="17" x2="12.01" y2="17"/>
+              </svg>
+            </div>
+            <span class="badge badge-neutral">24/7 Support</span>
+          </div>
+          <h3 class="card-title">Help & Support Desk</h3>
+          <p class="card-desc">Raise support tickets regarding result discrepancies, payment issues, or technical assistance.</p>
+          <div class="card-footer">
+            <span class="action-text">Contact Support</span>
+            <span class="card-arrow">&rarr;</span>
+          </div>
+        </a>
+
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2026 Result Management System. All rights reserved.</p>
+        <p class="footer-sub">Authorized Academic Portal for Student Verification & Records</p>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
